@@ -23,5 +23,3 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/eyHvJaJF1O.gif'/>
-
-NOTE: I finished this at 11:49 PM EST but due to some issues with my enrollment right now I'm unable to submit.
