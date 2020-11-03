@@ -36,15 +36,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return posts.count
+        let post = posts[section]
+        let comments = (post["comments"] as? [PFObject]) ?? []
+        return comments.count + 1
     }
     
     func numberOfSections(in tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let post = posts[section]
-        let comments = (post["comments"] as? [PFObject]) ?? []
-        
-        return comments.count + 1
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
